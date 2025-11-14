@@ -30,7 +30,7 @@ Este curso tiene una duración de 1 hora y media, y tiene como objetivo introduc
 - **Descripción:** En esta lección, aprenderás a cómo hacer que tus programas realicen cálculos y tomen decisiones simples. En esta lección aprenderás a usar operadores aritméticos, relacionales y lógicos, las herramientas que permiten que tu código “piense” y resuelva problemas.
 - **Enlace del Video:** [¡Clic aquí!](https://youtu.be/biofxE3YZ00)
 - **Conclusiones:** Comprendiste cómo combinar variables y operadores para crear expresiones matemáticas y lógicas. Con esto, tus programas ya pueden comparar, calcular y analizar condiciones de manera automática.
----
+
 ### Bloques de Código: JAVA
 
 - Operadores Aritmeticos
@@ -114,7 +114,6 @@ Crea una condición lógica que verifique eso e imprime el resultado.
 - **Descripción:** En esta lección, verás cómo los programas pueden tomar decisiones (con las instrucciones: ```if``` y ```else```) y repetir acciones muchas veces (con: ```for``` y ```while```). Aprenderás a controlar el flujo del programa y crear comportamientos dinámicos y personalizados.
 - **Enlace del Video:** [¡Clic aquí!](https://youtu.be/v3RVMqweLjU)
 - **Conclusiones:** Has aprendido a controlar cómo y cuándo se ejecutan las instrucciones en tu programa. Gracias a las estructuras condicionales y los bucles, tus programas pueden reaccionar a distintas situaciones y automatizar tareas repetitivas.
-
 
 ### Bloques de Código: JAVA
 
