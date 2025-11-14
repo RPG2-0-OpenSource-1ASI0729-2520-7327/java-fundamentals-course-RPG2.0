@@ -16,15 +16,71 @@ Este curso tiene una duración de 1 hora y media, y tiene como objetivo introduc
 
 ### Lección 1: Introducción a la Programación y al Lenguaje Java ( 5 minutos )
 - **Descripción:** En esta lección, aprenderás qué es la programación y por qué Java es uno de los lenguajes más usados. Descubrirás cómo los programadores dan instrucciones a las computadoras, y cómo Java permite crear desde simples programas en consola hasta aplicaciones móviles y videojuegos.
-- **Enlace del Video:** [¡Clic aquí!](https://www.youtube.com)
+- **Enlace del Video:** [¡Clic aquí!](https://youtu.be/uLt4VuX44PE)
+### Bloques de Código: JAVA
+
+- Introduccion programa "Hello World"
+
+```Java
+
+// Programa para imprimir "Hello world!"
+public class Main {
+  public static void main(String[] args) {
+    System.out.println("Hello world!");
+  }
+}
+```
 - **Conclusiones:** Ahora comprendes que programar significa comunicarse con la computadora usando un lenguaje que esta entienda. Java es una puerta de entrada al mundo de la programación por su facilidad, potencia y gran comunidad. Ahora estás más que listo para escribir tu primer línea de código.
 - **Empieza a Programar:** [¡Regístrate en Replit y comienza ahora!](https://replit.com/languages/java10)
 
 ### Lección 2: Sintaxis, Variables y Tipos de Datos ( 7 minutos )
 - **Descripción:** Esta lección te enseña la estructura fundamental de un programa Java: clases, métodos y la función principal ```main```. También aprenderás a crear variables para guardar información y conocerás los tipos de datos básicos como enteros, decimales, texto y booleanos.
-- **Enlace del Video:** [¡Clic aquí!](https://www.youtube.com)
+- **Enlace del Video:** [¡Clic aquí!](https://youtu.be/Os2uby36yKk)
+### Bloques de Código: JAVA
+
+- Variables y entidades
+
+```Java
+
+// Programa de Datos de estudiante
+import java.util.Scanner;
+
+public class Main {
+  public static void main(String[] args) {
+
+    // Crear un lector para datos
+    Scanner input = new Scanner(System.in);
+
+    // Pedir el nombre
+    System.out.print("Escribe tu nombre: ");
+    String nombre = input.nextLine();
+
+    // Pedir la edad
+    System.out.print("Escribe tu edad: ");
+    int edad = input.nextInt();
+
+    // Pedir la altura
+    System.out.print("Escribe tu altura en metros (ejemplo 1.65): ");
+    double altura = input.nextDouble();
+
+    // Pedir si es estudiante
+    System.out.print("¿Eres estudiante? (true/false): ");
+    boolean estudiante = input.nextBoolean();
+
+    // Mostrar datos guardados
+    System.out.println("\n--- DATOS GUARDADOS ---");
+    System.out.println("Nombre: " + nombre);
+    System.out.println("Edad: " + edad);
+    System.out.println("Altura: " + altura + " m");
+    System.out.println("¿Es estudiante?: " + estudiante);
+
+    input.close();
+  }
+}
+
+```
 - **Conclusiones:** Has aprendido cómo se organiza un programa en Java y cómo las variables te permiten almacenar distintos tipos de información. Ahora ya puedes crear pequeños programas que manipulen datos básicos y los muestren por pantalla.
-- **Práctica:** 
+- **Práctica:** Crea una tarjeta de presentación digital.
 
 ### Lección 3: Operadores y Expresiones ( 9 minutos )
 - **Descripción:** En esta lección, aprenderás a cómo hacer que tus programas realicen cálculos y tomen decisiones simples. En esta lección aprenderás a usar operadores aritméticos, relacionales y lógicos, las herramientas que permiten que tu código “piense” y resuelva problemas.
