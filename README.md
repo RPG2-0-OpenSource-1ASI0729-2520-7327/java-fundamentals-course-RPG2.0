@@ -196,7 +196,6 @@ public class Main {
 - Si la temperatura es mayor o igual a 25, imprime: "**Hace calor**"  
 - De lo contrario, imprime: "**Hace frío**"
 
----
 
 2. Declara una variable `puntos = 72` y evalúa el puntaje y muestra un mensaje:  
 
@@ -204,11 +203,9 @@ public class Main {
 - Si es mayor o igual a 60 → "Nivel Medio"  
 - Si es menor a 60 → "Nivel Bajo"
 
----
 
 3. Usa un bucle `for` para imprimir los números del **1 al 30**.
 
----
 
 4. Declara `contador = 5` y usa un `while` para imprimir el mensaje **"Cuenta regresiva"** hasta que llegue a 1.
 
