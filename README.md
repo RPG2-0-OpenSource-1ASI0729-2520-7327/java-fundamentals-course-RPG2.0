@@ -1,6 +1,5 @@
 # Fundamentos del Lenguaje de Programación Java para Principiantes
 
----
 
 ## Resumen del Curso
 Este curso tiene una duración de 1 hora y media, y tiene como objetivo introducir a estudiantes de secundaria a los fundamentos básicos de la programación con el lenguaje Java, incluyendo información básica del paradigma de la [Programación Orientada a Objetos (POO)](https://www.w3schools.com/java/java_oop.asp).
@@ -265,30 +264,138 @@ public class Main {
 4. Declara `contador = 5` y usa un `while` para imprimir el mensaje **"Cuenta regresiva"** hasta que llegue a 1.
 
 ---
-### Lección 5: Funciones y Parámetros ( 7 minutos )
-- **Descripción:** En esta lección, aprenderás a organizar tu código en bloques reutilizables llamados funciones. Entenderás cómo pasarles información (a través de parámetros) y cómo devolver resultados (con los llamados valores de retorno), haciendo tus programas más limpios, ordenados y eficientes.
-- **Enlace del Video:** [¡Clic aquí!](https://www.youtube.com)
+### Lección 5: Métodos y Parámetros ( 7 minutos )
+- **Descripción:** En esta lección, aprenderás a organizar tu código en bloques reutilizables llamados métodos. Entenderás cómo pasarles información (a través de parámetros) y cómo devolver resultados (con los llamados valores de retorno), haciendo tus programas más limpios, ordenados y eficientes.
+- **Enlace del Video:** [¡Clic aquí!](https://www.youtube.com/watch?v=TpSX6KOj4Wc)
 - **Conclusiones:** Ahora sabes cómo dividir un programa en partes más pequeñas y reutilizables. Las funciones te permiten escribir código más organizado y profesional, una habilidad esencial para cualquier programador.
-- **Práctica:**
 
+### Bloques de Código: JAVA
+
+- Método sin parametros (o `void`): Imprimir un mensaje en la consola.
+
+```Java
+
+import java.util.Scanner;
+
+public class Main {
+  public static void main(String[] args) {
+    // Instanciando input
+    Scanner input = new Scanner(System.in);
+
+    // Llamando al metodo saludar
+    saludar();
+    
+    input.close();
+  }
+
+  // Metodo saludar: Imprime un mensaje en consola
+  public static void saludar() {
+    System.out.println("Hola, Usuario");
+  }
+}
+```
+
+- Método con Parámetro: Deletreador de palabras
+
+```Java
+
+import java.util.Scanner;
+
+public class Main {
+  public static void main(String[] args) {
+    // Instanciando input
+    Scanner input = new Scanner(System.in);
+
+    // Solicitando al usuario que ingrese una palabra
+    System.out.print("Ingrese una palabra: ");
+    // Guardando la palabra en una variable
+    String palabra = input.nextLine();
+
+    // Llamando al metodo deletrear
+    // y pasandole la varable palabra como parametro
+    deletrear(palabra);
+    
+    input.close();
+  }
+
+  public static void deletrear(String palabra) {
+    for (int i = 0; i < palabra.length(); i++) {
+      System.out.println("Letra " + (i + 1) + ": " + palabra.charAt(i));
+    }
+  }
+}
+```
+
+- Métodos de Retorno con Parámetros: Operaciones matemáticas básicas
+
+```Java
+
+import java.util.Scanner;
+
+public class Main {
+  public static void main(String[] args) {
+    // Instanciando input
+    Scanner input = new Scanner(System.in);
+
+    // Llamando e imprimiendo los valores
+    // de las funciones de matematicas
+    System.out.println("Suma: " + sumar(20, 30));
+    System.out.println("Resta: " + restar(50, 20));
+    System.out.println("Multiplicacion: " + multiplicar(15, 5));
+    System.out.println("Division: " + dividir(105, 25));
+    
+    input.close();
+  }
+
+  // Funcion Sumar: Retorna Entero (int)
+  public static int sumar(int a, int b) {
+    return a + b;
+  }
+
+  // Funcion Restar: Retorna Entero (int)
+  public static int restar(int a, int b) {
+    return a - b;
+  }
+
+  // Funcion Multiplicar: Retorna Entero (int)
+  public static int multiplicar(int a, int b) {
+    return a * b;
+  }
+
+  // Funcion Dividir: Retorna Decimal (double)
+  public static double dividir(int a, int b) {
+    return a / b;
+  }
+}
+```
+
+- **Prácticas:**
+
+1. Declara un método que devuelva el factorial de un número.
+2. Declara un método que imprima los carácteres de una palabra al revéz.
+
+---
 ### Lección 6: Introducción a la Programación Orientada a Objetos (POO) ( 8 minutos)
 - **Descripción:** En esta lección, entrarás al mundo de la Programación Orientada a Objetos (POO), el paradigma que define al lenguaje Java. Aprenderás qué son las clases, los objetos y los constructores, y cómo representar personas, animales o cosas del mundo real dentro del código.
 - **Enlace del Video:** [¡Clic aquí!](https://www.youtube.com)
 - **Conclusiones:** Ahora, ya entiendes el concepto clave de la POO: usar clases y objetos para modelar el mundo real. Has aprendido a crear tus propias clases y darles atributos y comportamientos, lo que te permitirá construir programas más organizados y potentes.
 - **Práctica:**
 
+---
 ### Lección 7: Encapsulación, Getters y Setters (6 minutos ) 
 - **Descripción:** En esta lección, aprenderás el principio de la encapsulación, que protege los datos dentro de las clases. Verás cómo usar modificadores de acceso (como ```private``` y ```public```) y métodos especiales (conocidos como _getters_ y _setters_) para acceder a la información de forma segura.
 - **Enlace del Video:** [¡Clic aquí!](https://www.youtube.com)
 - **Conclusiones:** Ahora comprendes cómo proteger los datos de tus clases y controlar su acceso. La encapsulación te ayuda a mantener tu código más seguro, limpio y fácil de mantener, siguiendo buenas prácticas de la POO.
 - **Práctica:**
 
+---
 ### Lección 8: Arrays y Cadenas ( 7 minutos )
 - **Descripción:** En esta lección, aprenderás a trabajar con colecciones de datos mediante _arrays_, ideales para almacenar varios valores a la vez (como una lista de notas). Además, practicarás con métodos útiles de la clase _String_ para manipular texto.
 - **Enlace del Video:** [¡Clic aquí!](https://www.youtube.com)
 - **Conclusiones:** Ahora sabes cómo guardar y recorrer múltiples valores dentro de un arreglo, y cómo trabajar con cadenas de texto en Java. Este conocimiento será clave para crear cadenas más complejas y dinámicas.
 - **Práctica:**
 
+---
 ### Lección 9: Buenas Prácticas y Errores Comunes ( 6 minutos )
 - **Descripción:** En esta última lección verás las buenas prácticas de programación y los errores más frecuentes que cometen los principiantes. Aprenderás cómo escribir código más limpio, legible y fácil de mantener.
 - **Enlace del Video:** [¡Clic aquí!](https://www.youtube.com)
