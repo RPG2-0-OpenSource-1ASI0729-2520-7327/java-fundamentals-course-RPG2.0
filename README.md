@@ -377,9 +377,67 @@ public class Main {
 ---
 ### Lección 6: Introducción a la Programación Orientada a Objetos (POO) ( 8 minutos)
 - **Descripción:** En esta lección, entrarás al mundo de la Programación Orientada a Objetos (POO), el paradigma que define al lenguaje Java. Aprenderás qué son las clases, los objetos y los constructores, y cómo representar personas, animales o cosas del mundo real dentro del código.
-- **Enlace del Video:** [¡Clic aquí!](https://www.youtube.com)
+- **Enlace del Video:** [¡Clic aquí!](https://www.youtube.com/watch?v=-3r9lpholr4)
 - **Conclusiones:** Ahora, ya entiendes el concepto clave de la POO: usar clases y objetos para modelar el mundo real. Has aprendido a crear tus propias clases y darles atributos y comportamientos, lo que te permitirá construir programas más organizados y potentes.
 - **Práctica:**
+
+```Java
+
+import java.util.Scanner;
+
+class Mascota {
+  public String nombre;
+  public String especie;
+  public int edad;
+
+  public Mascota(String nombre, String especie, int edad) {
+    this.nombre = nombre;
+    this.especie = especie;
+    this.edad = edad;
+  }
+
+  public void dormir() {
+    System.out.println(this.nombre + " esta durmiendo.");
+  }
+
+  public void comer() {
+    System.out.println(this.nombre + " esta comiendo.");
+  }
+
+  public String informacion() {
+    return "Nombre: " + this.nombre + ", Especie: " + this.especie + ", Edad: " + this.edad;
+  }
+}
+
+public class Main {
+  public static void main(String[] args) {
+    // Instanciando input
+    Scanner input = new Scanner(System.in);
+
+    Mascota mascota1 = new Mascota("Firulais", "Perro", 2);
+    Mascota mascota2 = new Mascota("Bojangles", "Gato", 3);
+
+    mascota1.dormir();
+    mascota1.comer();
+    
+    System.out.println("");
+    
+    mascota2.dormir();
+    mascota2.comer();
+
+    System.out.println("");
+
+    String informacionMascota1 = mascota1.informacion();
+    String informacionMascota2 = mascota2.informacion();
+
+    System.out.println(informacionMascota1);
+    System.out.println(informacionMascota2);
+    
+    input.close();
+  }
+}
+
+```
 
 ---
 ### Lección 7: Encapsulación, Getters y Setters (6 minutos ) 
