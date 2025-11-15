@@ -388,6 +388,40 @@ public class Main {
 - **Conclusiones:** Ahora comprendes cómo proteger los datos de tus clases y controlar su acceso. La encapsulación te ayuda a mantener tu código más seguro, limpio y fácil de mantener, siguiendo buenas prácticas de la POO.
 - **Práctica:**
 
+```Java
+
+class Persona {
+    private int edad;      // Propiedad privada (encapsulada)
+    private String nombre; // Propiedad privada
+
+    // Constructor
+    public Persona(String nombre, int edad) {
+        this.nombre = nombre;
+        this.edad = edad;
+    }
+
+    // Getter
+    public int getEdad() {
+        return edad;
+    }
+
+    // Setter con validación
+    public void setEdad(int nuevaEdad) {
+        if (nuevaEdad > 0) {
+            this.edad = nuevaEdad;
+        }
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+}
+
+```
+
+
+
+
 ---
 ### Lección 8: Arrays y Cadenas ( 7 minutos )
 - **Descripción:** En esta lección, aprenderás a trabajar con colecciones de datos mediante _arrays_, ideales para almacenar varios valores a la vez (como una lista de notas). Además, practicarás con métodos útiles de la clase _String_ para manipular texto.
@@ -395,13 +429,121 @@ public class Main {
 - **Conclusiones:** Ahora sabes cómo guardar y recorrer múltiples valores dentro de un arreglo, y cómo trabajar con cadenas de texto en Java. Este conocimiento será clave para crear cadenas más complejas y dinámicas.
 - **Práctica:**
 
+```Java
+
+
+class Leccion8 {
+
+    public static void ejecutar() {
+
+        System.out.println("\n==============================");
+        System.out.println("   LECCIÓN 8 - ARRAYS Y CADENAS");
+        System.out.println("==============================\n");
+
+        // ---- Arrays ----
+        String[] frutas = {"Manzana", "Pera", "Plátano"};
+        System.out.println("Primer elemento del array: " + frutas[0]);
+
+        System.out.println("\nRecorriendo el array:");
+        for (int i = 0; i < frutas.length; i++) {
+            System.out.println("- " + frutas[i]);
+        }
+
+        // ---- Cadenas ----
+        String nombre = "David";
+
+        System.out.println("\nTrabajando con cadenas:");
+        System.out.println("Longitud: " + nombre.length());
+        System.out.println("Mayúsculas: " + nombre.toUpperCase());
+        System.out.println("Incluye 'vi'? " + nombre.contains("vi"));
+
+        // ---- Mezclando arrays + cadenas ----
+        String[] nombres = {"Ana", "Carlos", "Diana"};
+        System.out.println("\nSaludos:");
+        for (String n : nombres) {
+            System.out.println("Hola " + n);
+        }
+    }
+}
+
+
+```
+
 ---
 ### Lección 9: Buenas Prácticas y Errores Comunes ( 6 minutos )
 - **Descripción:** En esta última lección verás las buenas prácticas de programación y los errores más frecuentes que cometen los principiantes. Aprenderás cómo escribir código más limpio, legible y fácil de mantener.
 - **Enlace del Video:** [¡Clic aquí!](https://www.youtube.com)
 - **Conclusiones:** Has llegado al final del curso con una base sólida en Java y pensamiento lógico. Ahora conoces las mejores formas de escribir, estructurar y depurar tu código. ¡Ya estás listo para seguir aprendiendo y crear tus propias aplicaciones!
 - **Práctica:**
+```Java
 
+
+class Leccion9 {
+
+    public static void ejecutar() {
+
+        System.out.println("\n==============================");
+        System.out.println("   LECCIÓN 9 - BUENAS PRÁCTICAS");
+        System.out.println("==============================\n");
+
+        // Nombres descriptivos
+        int edadUsuario = 20;
+        String nombreProducto = "Laptop";
+
+        System.out.println("Edad usuario: " + edadUsuario);
+        System.out.println("Producto: " + nombreProducto);
+
+        // Indentación correcta
+        if (edadUsuario > 18) {
+            System.out.println("Eres mayor de edad.");
+        }
+
+        // Uso de funciones para evitar repetir código
+        saludar("David");
+        saludar("Ana");
+
+        // Errores comunes
+        System.out.println("\nERRORES COMUNES A EVITAR:");
+        System.out.println("- Confundir '=' con '=='");
+        System.out.println("- Olvidar llaves {}");
+        System.out.println("- Nombres mal escritos");
+        System.out.println("- Índices fuera del array");
+        System.out.println("- No cerrar comillas");
+    }
+
+    public static void saludar(String nombre) {
+        System.out.println("Hola " + nombre);
+    }
+}
+```
+## Main de las lecciones 7 a 9:
+
+```Java
+public class Main {
+    public static void main(String[] args) {
+
+        System.out.println("==============================");
+        System.out.println("LECCIÓN 7 - ENCAPSULACIÓN");
+        System.out.println("==============================\n");
+
+        // Parte de la Lección 7
+        Persona p = new Persona("María", 15);
+
+        System.out.println("Edad inicial: " + p.getEdad());
+        p.setEdad(16);
+        System.out.println("Edad después del setter: " + p.getEdad());
+
+        // Ejecutar Lección 8
+        Leccion8.ejecutar();
+
+        // Ejecutar Lección 9
+        Leccion9.ejecutar();
+
+        System.out.println("\n=== Fin de las lecciones 7-9 ===");
+    }
+}
+
+```
 ## Recursos Adicionales
 - **Código Fuente Completo:** [Github Link aquí](https://github.com)
 - **Todas las actividades prácticas:**
