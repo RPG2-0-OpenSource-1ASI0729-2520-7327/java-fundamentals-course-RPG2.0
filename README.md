@@ -384,7 +384,7 @@ public class Main {
 ---
 ### Lección 7: Encapsulación, Getters y Setters (6 minutos ) 
 - **Descripción:** En esta lección, aprenderás el principio de la encapsulación, que protege los datos dentro de las clases. Verás cómo usar modificadores de acceso (como ```private``` y ```public```) y métodos especiales (conocidos como _getters_ y _setters_) para acceder a la información de forma segura.
-- **Enlace del Video:** [¡Clic aquí!](https://www.youtube.com)
+- **Enlace del Video:** [¡Clic aquí!](https://youtu.be/3BER3fadKis)
 - **Conclusiones:** Ahora comprendes cómo proteger los datos de tus clases y controlar su acceso. La encapsulación te ayuda a mantener tu código más seguro, limpio y fácil de mantener, siguiendo buenas prácticas de la POO.
 - **Práctica:**
 
@@ -425,7 +425,7 @@ class Persona {
 ---
 ### Lección 8: Arrays y Cadenas ( 7 minutos )
 - **Descripción:** En esta lección, aprenderás a trabajar con colecciones de datos mediante _arrays_, ideales para almacenar varios valores a la vez (como una lista de notas). Además, practicarás con métodos útiles de la clase _String_ para manipular texto.
-- **Enlace del Video:** [¡Clic aquí!](https://www.youtube.com)
+- **Enlace del Video:** [¡Clic aquí!](https://youtu.be/q2-fReLv38I)
 - **Conclusiones:** Ahora sabes cómo guardar y recorrer múltiples valores dentro de un arreglo, y cómo trabajar con cadenas de texto en Java. Este conocimiento será clave para crear cadenas más complejas y dinámicas.
 - **Práctica:**
 
@@ -472,7 +472,7 @@ class Leccion8 {
 ---
 ### Lección 9: Buenas Prácticas y Errores Comunes ( 6 minutos )
 - **Descripción:** En esta última lección verás las buenas prácticas de programación y los errores más frecuentes que cometen los principiantes. Aprenderás cómo escribir código más limpio, legible y fácil de mantener.
-- **Enlace del Video:** [¡Clic aquí!](https://www.youtube.com)
+- **Enlace del Video:** [¡Clic aquí!](https://youtu.be/sHM_TkCFvBA)
 - **Conclusiones:** Has llegado al final del curso con una base sólida en Java y pensamiento lógico. Ahora conoces las mejores formas de escribir, estructurar y depurar tu código. ¡Ya estás listo para seguir aprendiendo y crear tus propias aplicaciones!
 - **Práctica:**
 ```Java
