@@ -9,7 +9,6 @@ Este curso tiene una duración de 1 hora y media, y tiene como objetivo introduc
 **Pre-requisitos:** Ninguno
 **Herramientas Necesarias:** Solo necesitas tu navegador web (Chrome, Brave, Firefox, Safari, Edge, etc).
 
-**Repositorio de Código Fuente:** [Link aquí](GETOUT)
 
 ## Secuencia de Lecciones
 
